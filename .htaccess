@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteRule ^$ index.php [L]
+RewriteCond $1 !^(index\.php|vandor|attachments)
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
